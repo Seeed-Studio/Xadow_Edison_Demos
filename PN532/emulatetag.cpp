@@ -46,7 +46,7 @@
 #define ISO7816_READ_BINARY 0xB0
 #define ISO7816_UPDATE_BINARY 0xD6
 
-typedef enum { NONE, CC, NDEF } tag_file;   // CC ... Compatibility Container
+typedef enum { _NONE, CC, NDEF } tag_file;   // CC ... Compatibility Container
 
 bool EmulateTag::init(){
   pn532.begin();
@@ -119,7 +119,7 @@ bool EmulateTag::emulate(const uint16_t tgInitAsTargetTimeout){
   uint8_t rwbuf[128];
   uint8_t sendlen;
   int16_t status;
-  tag_file currentFile = NONE;
+  tag_file currentFile = _NONE;
   uint16_t cc_size = sizeof(compatibility_container);
   bool runLoop = true;
 
@@ -167,7 +167,7 @@ bool EmulateTag::emulate(const uint16_t tgInitAsTargetTimeout){
       break;
     case ISO7816_READ_BINARY:
       switch(currentFile){
-      case NONE:
+      case _NONE:
 	setResponse(TAG_NOT_FOUND, rwbuf, &sendlen);
 	break;
       case CC:
