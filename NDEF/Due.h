@@ -4,6 +4,8 @@
 #ifndef Due_h
 #define Due_h
 
+#define __SAM3X8E__
+ 
 #if defined(__SAM3X8E__)
     #define PROGMEM
     #define pgm_read_byte(x)        (*((char *)x))
