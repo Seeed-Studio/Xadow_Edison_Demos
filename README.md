@@ -9,7 +9,7 @@ Declaration：
 	2. Changed enum member NONE to _NONE in PN532/emulatetag.cpp
 
 
-This project mainly include three demos Cool_light and GlowingTemperature.
+This project mainly include two demos Cool_light and GlowingTemperature.
 
 To Getting start:
 1. Cool_light
