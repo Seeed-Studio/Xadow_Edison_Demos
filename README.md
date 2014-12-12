@@ -11,7 +11,7 @@ Declaration：
 
 This project mainly include two demos Cool_light and GlowingTemperature.
 
-To Getting start:
+Getting start:
 
 1. Cool_light
 	Prepare three or one NFC Tag, write message into them by demo Cool_Light_WriteTag (open the demo see the details)
