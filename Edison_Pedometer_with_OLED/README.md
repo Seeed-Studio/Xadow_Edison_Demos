@@ -1,15 +1,16 @@
 Edison-Pedometer
 ---------------------------------------------------------
-Hardware
-###
+###Hardware
+
 Intel® Edison *1 <br>
 Xadow – Edison *1 <br>
 Xadow – Edison – Programmer *1 <br>
 Xadow - OLED 0.96" *1 <br>
 Xadow - 3-Axis Accelerometer *1 <br>
 Xadow – Buzzer *1 <br>
-Instructions
-###
+
+###Instructions
+
 1.Using the FPC Cables, making the following connections. <br>
 
 ![image] (https://github.com/Seeed-Studio/Xadow_Edison_Demos/blob/master/Edison_Pedometer_with_OLED/pic/Pedometer_1.png)
