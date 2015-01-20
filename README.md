@@ -13,3 +13,4 @@ Prepare three or one NFC Tag, write message into them by demo Cool_Light_WriteTa
 ####Edison_Pedometer_with_OLED<br>
 	
 	
+[![Analytics](https://ga-beacon.appspot.com/UA-46589105-3/Xadow_Edison_Demos)](https://github.com/igrigorik/ga-beacon)
