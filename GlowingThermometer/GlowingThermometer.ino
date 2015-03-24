@@ -9,10 +9,13 @@
                                   Serial.println(str2)
 #define LEDN 5
 #define SIG_PIN 12
+#define high_temp_alarm  32
+#define low_temp_alarm  25
 
 uint8_t color[LEDN];
-uint8_t t[5] = {25, 26, 27, 28, 29};//you can setup 5 temperature steps to track color
+uint8_t t[5] = {28, 29, 30, 31, 32};//you can setup 5 temperature steps to track color
 //Barometer
+
 float temperature;
 float pressure;
 float altitude;
@@ -164,7 +167,7 @@ void setup()
   myBarometer.init(); //Barometer init      
   vibratorInit();     //init vibrator pins
   strip.begin();      // Init and begin strip drivers
-  color_domain_init(25, 30, LEDN);
+  color_domain_init(low_temp_alarm, high_temp_alarm, LEDN);
 }
 
 void messagetoSerial()
@@ -253,7 +256,7 @@ void colorFollow(){
 
 void TempAlarm(){
   int k=3;
-  if ( temperature >= 30 ) {
+  if ( temperature >= high_temp_alarm ) {
     while(k--){
       SeeedOled.setNormalDisplay();
       SeeedOled.setTextXY(0,0); 
@@ -269,7 +272,7 @@ void TempAlarm(){
     initOledTitle();    //init OLED Title
     vibratorOff();
   }
-  else if(temperature < 20){
+  else if(temperature < low_temp_alarm){
     while(k--){
       SeeedOled.setNormalDisplay();
       SeeedOled.setTextXY(0,0); 
