@@ -84,8 +84,6 @@ void setup()
 
 void loop()
 {
-  Serial.
-  
   SeeedOled.setBrightness(Brightness++);  // Change the brightness 0 - 255
   SeeedOled.setPageMode();                // Set display addressing to page mode.
   SeeedOled.setTextXY(7,13);              // Set the Cursor position to 7th Page , 13th Column
