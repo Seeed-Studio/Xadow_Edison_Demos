@@ -75,9 +75,6 @@ void setup()
 {
   Wire.begin();	
   SeeedOled.init();  //initialze SEEED OLED display
-  DDRB|=0x21;        //digital pin 8, LED glow indicates Film properly Connected .
-  PORTB |= 0x21;
-
   SeeedOled.setInverseDisplay();          // Set inverse display
   SeeedOled.clearDisplay();               // clear the screen and set start position to top left corner
   SeeedOled.drawBitmap(SeeedLogo,1024);   // 1024 = 128 Pixels * 64 Pixels / 8
@@ -87,8 +84,6 @@ void setup()
 
 void loop()
 {
-  Serial.
-  
   SeeedOled.setBrightness(Brightness++);  // Change the brightness 0 - 255
   SeeedOled.setPageMode();                // Set display addressing to page mode.
   SeeedOled.setTextXY(7,13);              // Set the Cursor position to 7th Page , 13th Column
