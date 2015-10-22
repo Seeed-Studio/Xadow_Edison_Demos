@@ -12,8 +12,13 @@ This project mainly include three demos Cool_light GlowingTemperature and Edison
 Goto the seeed product wiki [xadow wearable kit for edison](http://www.seeedstudio.com/wiki/Xadow_Wearable_Kit_For_Edison) to see the detail.
 ####Cool_light <br>
 Prepare three or one NFC Tag, write message into them by demo Cool_Light_WriteTag (open the demo see the details) <br>
-####GlowingTemperature <br>
-####Edison_Pedometer_with_OLED <br>
-	
+
+####GlowingTemperature
+
+![](http://static.seeedstudio.com/depot/images/products/20150424/xadow_wearable6.png)
+
+####Edison_Pedometer_with_OLED
+
+![](http://static.seeedstudio.com/depot/images/products/20150424/xadow_wearable7.png)
 	
 [![Analytics](https://ga-beacon.appspot.com/UA-46589105-3/Xadow_Edison_Demos)](https://github.com/igrigorik/ga-beacon)
