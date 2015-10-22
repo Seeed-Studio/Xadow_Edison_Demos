@@ -22,7 +22,7 @@ char pass[] = "876543210";       // your network password
 int keyIndex = 0;                // your network key Index number (needed only for WEP)
 
 int status = WL_IDLE_STATUS;
-WiFiServer server(88);
+WiFiServer server(80); // listens on port 80
 int serverconnected = 0;
 
 //pedometer logo
