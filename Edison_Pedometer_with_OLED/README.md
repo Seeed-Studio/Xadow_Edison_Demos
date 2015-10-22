@@ -11,8 +11,8 @@ Edison-Pedometer
 
 ###Instructions
 
-1. Using the FPC Cables, make the following connections: ![image] (https://github.com/Seeed-Studio/Xadow_Edison_Demos/blob/master/Edison_Pedometer_with_OLED/pic/Pedometer_1.png)
-Note: When connecting Xadow-OLED/Xadow-3-Axis Accelerometer/Xadow-Buzzer to Xadow-Edison, you should make sure the connection direction is correct. The unfilled corner of one Xadow module needs to connect to the right angle of another module(refer to the 4 corners of each Xadow module).
+1. Using the FPC Cables, make the following connections: <br/> ![image] (https://github.com/Seeed-Studio/Xadow_Edison_Demos/blob/master/Edison_Pedometer_with_OLED/pic/Pedometer_1.png)
+<br/> Note: When connecting Xadow-OLED/Xadow-3-Axis Accelerometer/Xadow-Buzzer to Xadow-Edison, you should make sure the connection direction is correct. The unfilled corner of one Xadow module needs to connect to the right angle of another module(refer to the 4 corners of each Xadow module).
 
 2. Connect the UART and Device/Host port on Xadow-Edison-Programmer to PC USB port
 3. Download the library from Github
